@@ -50,7 +50,7 @@ codeunit 63000 "BLOB Storge Mgmt."
         BLOBStorageMgmt: DotNet BLOBStorageMgmt;
     begin
         BLOBStorageMgmt := BLOBStorageMgmt.BLOBStorageMgmt('DefaultEndpointsProtocol=https;AccountName=manojstorageac;AccountKey=oof6WRupsTtJZcYDv7+zsRHGKsP2aMAi2HhD6p5OozGuI/A0JAGB96307nQjRhClc9m0KYj54To3zMjIaEublA==;EndpointSuffix=core.windows.net');
-        BLOBStorageMgmt.dlo(SourceFileName, DestFileName, ContainerName);
+        //BLOBStorageMgmt.dlo(SourceFileName, DestFileName, ContainerName);
         if GuiAllowed then
             if ShowSuccessMsg then
                 Message('The file is downloaded successfully.');
